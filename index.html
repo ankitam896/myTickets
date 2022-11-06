@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>
+        myTickets
+    </title>
+    <link rel="stylesheet" href="styling.css">
+        <link rel="icon" href="./images/icons.png" type="image/x-icon">
+        <style>
+            .bg{
+          background-image:url(./images/train.png);
+          background-size:cover;
+          height: 20vh;
+          background-repeat: no-repeat;
+          margin: 0px;
+            }
+            table,td {
+               border: 1px solid;
+               background-color: white;
+               width: 50vh;
+              padding: 10px;
+              margin-top: 50px;
+              margin-left:70px;
+              margin-bottom: 50px;
+            }
+        </style>
+        </head>
+        <body class="bg">
+            <header>
+                <nav class="navbar">
+                    <ul>
+                        <li><button class="login"><a  style="color:white" target="_blank" href="login.html">LOGIN</a></button></li>
+                        <li>AGENT LOGIN</li>
+                        <li><a style="color:black"target="_blank" href="contact.html">CONTACT US</a></li>
+                        <li><button class="login" id="myBtn" style="margin-left: 0px;">ALERTS</button>
+                            <div id="myModal" class="modal">
+    
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <h3 class="alert">ALERT
+                                  <span class="close">&times;</span>
+                                  </h3>
+                                  <p><b>Vigilance Awareness Week- 2022 (भ्रष्टाचार मुक्त भारत - विकसित भारत; Corruption free India for a developed Nation). Be a part of this movement.</b></p>
+                                 <hr>
+                                  <button class="check">OK</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li> <div id="time" class="display">
+                        </div></li>
+                    </ul>
+                    <ul>
+                        <li><button class="login">EXCLUSIVE</button></li>
+                        <li>TRAINS</li>
+                        <li>BUSES</li>
+                        <li>FLIGHTS</li>
+                        <li>HOTELS </li>
+                        <li>HOLIDAYS</li>
+                        <li>LOYALTY</li>
+                        <li>MEALS</li>
+                        <li>PROMOTION</li>
+                        </ul>
+                     </nav>
+            </header>
+            <h1 align = "center" id="heading">BOOK MY TICKETS</h1>
+            <form action="backend.php">
+            <table align="left">
+                <tr>
+                    <td style=background-color:rgb(8,8,99);color:white><b>VACANCY</b></td>
+                    <td style=background-color:rgb(8,8,99);color:white><b>PNR STATUS</b></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="4" style=color:rgb(4,4,82)><h2>BOOK TICKETS</h2></td>
+                </tr>
+                <tr>
+                    <td>
+                    <label for="Place">From</label>
+                    <select name="myPlace">
+                        <option value="Bwn">BURDWAN-BWN</option>
+                        <option value="Ban">BANKURA-BQA</option>
+                        <option value="Dgp">DURGAPUR-DGP</option>
+                        <option value="Dl">DELHI-DLI</option>
+                        <option value="Dli">DELHI S ROHILA-DEE </option>
+                        <option value="How">HOWRAH Jn-HWH</option>
+                        <option value="Bpl">BHOPAL Jn-BPL</option>
+                        <option value="Koa">KOLKATA-KOAA</option>
+                        <option value="Hyd">HYDERABAD-HYD</option>
+                    </select>
+                    </td>
+                    <td>
+                        Date:<input type="date" name="myDate">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Place">To</label>
+                    <select name="myPlace">
+                        <option value="Bwn">BURDWAN-BWN</option>
+                        <option value="Ban">BANKURA-BQA</option>
+                        <option value="Dgp">DURGAPUR-DGP</option>
+                        <option value="Dl">DELHI-DLI</option>
+                        <option value="Dli">DELHI S ROHILA-DEE </option>
+                        <option value="How">HOWRAH Jn-HWH</option>
+                        <option value="Bpl">BHOPAL Jn-BPL</option>
+                        <option value="Koa">KOLKATA-KOAA</option>
+                        <option value="Hyd">HYDERABAD-HYD</option>
+                    </select>
+                    </td>
+                    <td>
+                        <label for="Class"></label>
+                    <select name="myClass" id="Class">
+                        <option value="All">All Classes</option>
+                        <option value="Anu">Anubhuti Class(EA)</option>
+                        <option value="1A">AC First Class(1A)</option>
+                        <option value="Vs">Vistadome AC(EV)</option>
+                        <option value="Exe">Exec. Chair Car(EC) </option>
+                        <option value="2A">AC 2 Tier</option>
+                        <option value="Fir">First Class(FC)</option>
+                        <option value="3A">AC 3 Tier</option>
+                        <option value="Eco">AC 3 Economy(3E)</option>
+                        <option value="SL">Sleeper(SL)</option>
+                        <option value="2S">Second Sitting(2S)</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="General"></label>
+                        <select name="mySituation">
+                            <option value="Gen">GENERAL</option>
+                            <option value="F">LADIES</option>
+                            <option value="LB">LOWER BERTH/SR.CITIZEN</option>
+                            <option value="Dis">PERSON WITH DISABILITY</option>
+                            <option value="Tat">TATKAL </option>
+                            <option value="PTat">PpxIUM TATKAL</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>
+                        Person with disability concession: <input type="checkbox" name="mystatus">
+                    </td>
+                    <td>
+                        Flexible with Date: <input type="checkbox" name="mydate">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Train with available berth: <input type="checkbox" name="myavailability">
+                    </td>
+                    <td>
+                        Railway Pass concession:<input type="checkbox" name="myconcession">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="4">
+                    <input type="submit" value="search" style=background-color:orangered>
+                        </td>
+                    </tr>
+                    
+            </table>
+            </form>
+            <h1 align="right" id="change">INDIAN RAILWAYS</h1>
+            <h2 align="right" id="context" style=color:white;>Safety| Security| Punctuality</h2>
+            <div>
+                <p id="note">myTickets helps you to book tickets faster and more conveniently.<br><br>
+                    Indian Railways have started provisioning of Linen in trains. Click here for the list of trains where Linen Services have been restarted as on date.</p>
+            </div>
+            <div id="service">
+                <h2>Have you not found the right one?<br>
+                    Find a service suitable for you here.</h2>
+            </div>
+            <div>
+                <button id="first" class="hotel"><img src="./images/iconflight.png" width="64px"></button>
+                <button class="hotel"><img src="./images/iconhotel.png" width="64px"></button>
+                <button class="hotel"><img src="./images/line-chart.png" width="64px" ></button>
+                <button class="hotel"><img src="./images/cloche.png" width="64px"></button>
+                <button class="hotel"><img src="./images/bus.png" width="64px"></button>
+              </div>
+              <div>
+                <button id="first" class="hotel"><img src="./images/sunbed.png" width="64px"></button>
+                <button class="hotel"><img src="./images/train (1).png" width="64px"></button>
+                <button class="hotel"><img src="./images/mountain.png" width="64px"></button>
+                <button class="hotel"><img src="./images/train2.png" width="64px"></button>
+                 <button class="hotel"><img src="./images/terrain.png" width="64px"></button>
+              </div>
+             <div class="holiday">
+                 <hr>
+                 <h2 id="holiday2">HOLIDAYS</h2>
+             <div>
+                 <nav id="holiday3" class="holiday">
+                 <img src="./images/maharaja.png">
+                 <h2 align="center">Maharajas' Express</h2>
+                 <p class="define">Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.</p>
+                 <a target="_blank" href=""class="readmore" ><b>Read more</b></a>
+                 </nav>
+                 <nav id="holiday4" class="holiday">
+                    <img src="./images/Thailand.png">
+                    <h2 align="center">International Packages</h2>
+                    <p class="define">Best deals in International Holiday packages, handpicked for you, for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free and memorable experience.</p>
+                    <a target="_blank" href=""class="readmore" ><b>Read more</b></a>
+                </nav>
+                <nav id="holiday5" class="holiday">
+                    <img src="./images/Kashmir.png">
+                    <h2 align="center">Domestic Air Packages</h2>
+                    <p class="define">Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands, myTickets has it all. Discover India through myTickets!</p>
+                    <a target="_blank" href=""class="readmore" ><b>Read more</b></a>
+                </nav>
+             </div>
+             <div>
+                 <nav id="holiday6" class="holiday">
+                    <img src="./images/Buddha_Banner.png">
+                    <h2 align="center">Buddhist Circuit Tourist Train</h2>
+                    <p class="define">India, the country where Buddhism originated has rich memories of the Buddhist legacy. As part of its drive towards austerity, the only kind of art & architecture that it supported were Stupas, Chaityas & Viharas. Buddhist Train India will help you visit all these places up close for a truly religious experience.</p>
+                    <a target="_blank" href=""class="readmore" ><b>Read more</b></a>
+                 </nav>
+                 <nav id="holiday7" class="holiday">
+                    <img src="./images/Manali.png">
+                    <h2 align="center">Rail Tour Packages</h2>
+                    <p class="define">myTickets offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available.</p>
+                    <a target="_blank" href=""class="readmore" ><b>Read more</b></a>
+                 </nav>
+             </div>
+             </div>
+             <div class="snet">
+              <p class="socialnetwork">Get Connected through social networks:
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100050851833791"><img src="./images/facebook.png" width="35px"style="padding-top:10px;padding-bottom:-50px" ></a>
+              </p>
+            </div>
+            <script src="time.js">
+            </script>
+            <script src ="popup.js"></script>
+        </body>
+    </html>

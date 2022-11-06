@@ -1,0 +1,245 @@
+h1 {
+    color: white;
+}
+#heading {
+    margin-top: 160px;
+    margin-bottom: 0px;
+}
+.navbar {
+    background-color:rgb(215, 235, 241);
+    height:120px;
+    width: 1350px;
+    display: inline-block;
+    position: fixed;
+    top: 0px;
+
+}
+.navbar ul {
+    overflow:auto;
+}
+.navbar li {
+    float: left;
+    list-style: none;
+    padding: 10px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+a:link,a:visited {
+    text-decoration: none;
+}
+.login {
+    background-color: rgb(51, 51, 131);
+    color: white;
+    padding: -4px 2px -4px 2px;
+    border: none;
+    cursor: pointer;
+    margin-left: 300px;
+}
+.login:hover{
+    border: 1px solid;
+    color: black;
+}
+.alert{
+    padding: 0px 2px 0px 2px;
+}
+#change {
+    font-size: 50px;
+    font-family: 'Lucida Sans','Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 70px;
+    margin-top: 180px;
+}
+#next {
+    margin-bottom: 40px;
+    margin-left: 34px;
+}
+ #context {
+     margin-right: 70px;
+ }  
+ #note {
+     border: 40px;
+     background-color: white;
+     color: blue;
+     width: 410px;
+     height: 130px;
+     padding: 2px 2px 4px 4px;
+     margin: 250px 0px 0px 70px;
+
+ }
+ #service {
+     font-size: 25px;
+     margin-top: 200px;
+     margin-left: 380px;
+ }
+ #first {
+     border-radius: 100px;
+     margin-left: 230px;
+     margin-top: 40px;
+     padding: 15px;
+ }
+ .hotel:hover {
+     background-color: rgb(51, 51, 131);
+     border: none;
+ }
+  .hotel {
+      background-color: white;
+    border-radius: 100px;
+      padding: 15px;
+      margin-top: 40px;
+      margin-left: 100px;
+      margin-bottom: 30px;
+
+ }
+ .holiday {
+     background-color: rgb(228, 231, 235);
+     box-sizing: border-box;
+     
+ }
+ #holiday2 {
+     margin-left: 560px;
+     margin-top: 50px;
+     font-size: 35px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ #holiday3 {
+     border: 1px solid gray;
+     background-color: white;
+     width: 338px;
+  margin-top: 70px;
+  margin-left: 120px;
+  padding-bottom: 7px;
+  display: inline-block;
+ }
+ .define {
+     padding:3px 10px 0px 10px;
+ }
+.readmore {
+    color:black;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.readmore:hover {
+    border: 1px solid black;
+    margin-left:8px ;
+    padding: 0px;
+    text-decoration: dashed;
+    text-align: center;
+    display: inline-block;
+}
+#holiday4 {
+    border: 1px solid gray;
+     background-color: white;
+     width: 338px;
+     margin-left: 50px;
+     margin-top: 10px;
+     padding-bottom: 7px;
+     display: inline-block;
+    }
+    #holiday5{
+        border: 1px solid gray;
+        background-color: white;
+        width: 338px;
+        margin-left: 50px;
+        margin-top: 10px;
+        padding-bottom: 7px;
+        display: inline-block; 
+    }
+    #holiday6{
+        border: 1px solid gray;
+        background-color: white;
+        width: 338px;
+     margin-top: 70px;
+     margin-left: 120px;
+     padding-bottom: 7px;
+     display: inline-block;
+     margin-bottom: 40px;
+    }
+    #holiday7 {
+        border: 1px solid gray;
+        background-color: white;
+        width: 338px;
+        margin-left: 50px;
+        margin-top: 10px;
+        padding-bottom: 7px;
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+    .snet {
+        background-color: rgb(51, 1, 97);
+    }
+    .socialnetwork {
+        color: white;
+        padding-bottom: 10px;
+        margin: 7px 0px 2px 240px;
+        font-size: 20px;
+    }
+    .display{
+        border: 1px solid;
+        padding: 1px 2px -2px 2px;
+    }
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+      
+      /* Modal Content/Box */
+      .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%; /* Could be more or less, depending on screen size */
+      }
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        
+        margin-top: -7px;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .check {
+        text-align: center;
+        justify-content: center;
+        background-color: rgb(228, 68, 10);
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px ;
+        color: white;
+        margin-left: 320px;
+        cursor: pointer;
+        display: inline-block;
+      }
+      .check:hover {
+        background-color: rgb(175, 54, 10);
+        border: none;
+      }
+      .alert {
+        background-color: rgb(8, 8, 99);
+        padding: 10px;
+        color: white;
+        width: 103%;
+        height: 10%;
+        margin-top: -20px;
+        margin-left: -20px;
+        margin-right: -0px;
+      }
+      
+        
+    

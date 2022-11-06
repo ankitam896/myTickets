@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-items: center;
+    background-color: rgb(12, 12, 92);
+}
+h1 {
+    margin-bottom: 2rem;
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    gap: 1rem;
+}
+input,select,textarea {
+    padding: 1.2rem;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+form button {
+    background-color: rgb(168, 12, 168);
+    color: white;
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin:20px auto 0;
+    border-radius: 30px;
+}
